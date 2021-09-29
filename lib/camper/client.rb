@@ -21,6 +21,7 @@ module Camper
     include ProjectsAPI
     include RecordingsAPI
     include ResourceAPI
+    include SubscriptionsAPI
     include TodolistsAPI
     include TodosAPI
 

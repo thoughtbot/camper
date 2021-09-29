@@ -15,6 +15,8 @@ module Camper
 
     class ResourceCannotBeCommented < Error; end
 
+    class ResourceHasNoSubscriptions < Error; end
+
     class RequestIsMissingParameters < Error; end
 
     class InvalidURL < Error; end

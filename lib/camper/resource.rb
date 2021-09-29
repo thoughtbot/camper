@@ -32,6 +32,15 @@ module Camper
       hash.key?('comments_url') && hash.key?('comments_count')
     end
 
+    # Check whether a resource can be subscribed to or not
+    # given the presence of `subscription_url` keys
+    #
+    # @return [Boolean]
+    def has_subscription?
+      hash.key?('subscription_url')
+    end
+
+
     def self.create(hash)
       klass = detect_type(hash["url"])
 
